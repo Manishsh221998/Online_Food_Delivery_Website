@@ -1,0 +1,376 @@
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:red;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+/* variable define */
+:root{
+    
+--primary-color: #F5C332; 
+--secondry-color:#231E41;
+--white-color: #fff;
+--black-color: #1c1c1c;
+/* text color variable */ 
+--text-primary: #F5C332; 
+--text-secondry: #231E41;
+ --text-white: ■#fff;
+--text-color: #555;
+--text-gray: #999;
+}
+    
+
+/* 1 custom CSS */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'Roboto',sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+}
+::-webkit-scrollbar-track{
+    background: var(--white-color);
+}
+::-webkit-slider-thumb{
+    background:var(--primary-color);
+}
+/* h1{
+    font-style: 3.15rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+     text-transform: capitalize;
+} */
+.navigation-wrap{
+    position: fixed;
+    z-index: 1000;
+color:var(--);
+}
+.navigation-wrap .navbar-toggler:focus{
+outline:none;
+border:unset;
+box-shadow:none;
+}
+.navigation-wrap .nav-link{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    /* letter-spacing: 0.0725rem; */
+    text-transform: capitalize;
+    
+}
+.navigation-wrap .nav-link:hover{
+    color: var(--text-primary);
+}
+.navbar{
+    background: var(--white-color);
+    margin-bottom: 75px;
+}
+.body{
+    margin-top: 38px;
+}
+
+
+.carousel-item{
+    height: 580px;
+    object-fit: cover;
+    object-position: center;
+
+}
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background-color: #ffc61d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: auto;
+}
+.icon-circle:hover{
+    background: #000; 
+    color:#ffc61d;
+
+}
+.icon-circle i {
+    font-size: 24px;
+    color: black;
+}
+.icon-circle i:hover{
+    color:#ffc61d;
+}
+.feature-box {
+    text-align:start;
+    display: flex;
+  margin-top:20px;  
+  }
+ /* .all_features{
+position: absolute;
+top:600px;
+right:100px;
+background: #fffefe;
+
+ } */
+ .feature-box .feature-box-content{
+    padding-top: 10px;
+    padding-left: 10px;
+ }
+ .feature-box .feature-box-content p{
+  color: rgb(138, 133, 133);
+ }
+
+ /* /dishesh of the day */
+ .dishes{
+    margin-top: 60px;
+    margin-bottom: 30px;
+ }
+ .food_heading{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .line{
+    color: #ba980f;
+ 
+    }
+ .dish-card {
+    width: 550px;
+    background: #fff;
+    border-radius: 10px;
+    /* padding: 20px; */
+    display: flex;
+    align-items:center;
+     margin-bottom: 30px;
+}
+.dish-card:hover{
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.1);
+
+}
+.dish-image {
+    width: 155px;
+    height: 155px;
+    border-radius:14px;
+    object-fit: cover;
+    margin-right: 15px;
+    box-shadow: 4px 6px 10px rgba(7, 7, 7, 0.396);
+ }
+.dish-card .dish-card-content{
+      text-align: start;
+     /* background: #b3ff660e; */
+}
+.dish-card .dish-card-content:hover{
+    text-align: start;
+   background: #ffffff6f;
+}
+.dish-card .dish-card-content p{
+    color: #999;
+}
+.btn-view-more {
+     margin: 24px auto;
+    background-color:var(--text-primary);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 5px; 
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.221);
+}
+.btn-view-more:hover{
+    background-color:#000;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.221);
+ 
+}
+/* our bestseller menu */
+ 
+.card:hover{
+    box-shadow: 4px 7px 12px rgba(0, 0, 0, 0.093);
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+.card-body {
+    text-align: center;
+ 
+ }
+.veg-tag, .non-veg-tag {
+    /* font-size: 12px;
+    padding: 5px 8px; */
+    height: 15px;
+    width: 15px;
+    border-radius: 16px;
+    color: white;
+}
+.veg-tag {
+    background-color: green;
+}
+.non-veg-tag {
+    background-color: red;
+}
+.price {
+    font-size: 18px;
+    font-weight: bold;
+}
+.discount {
+    font-size: 14px;
+    color: gray;
+    text-decoration: line-through;
+}
+.order-btn {
+    background-color:var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 1.5px 3px 5px rgba(0, 0, 0, 0.484);
+    margin: 8px 0px;
+}
+.order-btn:hover {
+    background-color: #010101;
+}
+/* rewiew */
+/* #testimonial{
+    margin-top:2.3rem;
+} */
+.review-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.carousel-item {
+    text-align: center;
+    /* padding: 30px; */
+}
+
+.review-slide{    
+      border: 1px solid rgb(205, 200, 200);
+    padding: 9px;
+    border-radius: 8px;
+  }
+.review-slide img {
+    max-width:190px;   
+    border-radius:50%;
+    margin-bottom: 20px;
+}
+.review-author {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.review-text {
+    font-style: italic;
+    color: #555;
+    font-size: 1.1em;
+}
+.carousel-item {
+    height: 500px;
+}
+/* footer */
+.footer {
+    
+    background-image:linear-gradient(to right,rgba(255, 239, 196, 0.738),rgba(255, 249, 192, 0.863)),url('https://img.freepik.com/premium-photo/table-with-bowls-food-including-variety-foods-including-one-that-says-o_1086760-104373.jpg?w=1060');
+    /* background: #fffbe4; */
+    /* background-image: linear-gradient(to right, #fff9cc, #ffd88f); */
+    color: rgb(0, 0, 0);
+    padding: 40px 0;
+    /* opacity: 0.8;     */
+    backdrop-filter: blur(1px);
+    background-size: cover;     
+    background-repeat:no-repeat;
+    background-position: center center;
+   
+ }
+.footer .list-unstyled {
+    list-style: none;
+}
+.footer a {
+    color: #000000;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer .social-icons a {
+    margin-right:10px;
+    font-size: 20px;
+    color: #000000;
+ }
+.footer .social-icons a:hover {
+    color: #ff0000;
+}
+.footer hr {
+    border-top: 1px solid #444;
+}
+
+/* Our chef */
+.chef-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+   }
+.chef-card img {
+     border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.chef-card .card-body {
+    padding: 10px;
+}
+.chef-card h5 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.chef-card p {
+    font-size: 0.9rem;
+    color: #777;
+} 
+ /* Make the carousel images responsive */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures images cover the carousel area without distortion */
+  }
+  
+  /* Adjust the carousel for smaller devices */
+  @media (max-width: 768px) {
+    .carousel-inner img {
+      object-position: center center; /* Ensure the center of the image is visible */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 30px;
+      height: 30px; /* Reduce the size of the carousel control icons */
+    }
+  }
+  
+  @media (max-width: 375px) {
+    /* Make the carousel controls even smaller for very small screens */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  

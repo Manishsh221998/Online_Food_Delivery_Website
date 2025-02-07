@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css -->
+  <link rel="stylesheet" href="/style.css">
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Font Awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Document</title>
+
+</head>
+
+<body class="body">
+  <!-- header -->
+  <header id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navigation-wrap shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/asset/logo.png" alt="logo" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#explore-foods">Explore Foods</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#chefs">Our Chefs </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <Button type="button" class="btn shadow-sm btn-warning border border-secondary">Order Now</Button>
+            </li>
+            <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- slider -->
+    <section class="slider">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner slide-imgs">
+          <div class="carousel-item active">
+            <img src="./asset/slider/img1.webp" class="d-block w-100" alt="Slide 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./asset/slider/img2.jpg" class="d-block w-100" alt="Slide 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./asset/slider/img5.jpg" class="d-block w-100" alt="Slide 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+  </header>
+
+  <main class="main">
+    <div class="container shadow-sm mt-2 rounded all_features">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="feature-box">
+            <div class="icon-circle">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="feature-box-content">
+              <h5 class="mt-3 fw-bold">Easy To Order</h5>
+              <p>Do You Have Any Dinner Plan Reserve Your Table</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-box">
+            <div class="icon-circle">
+              <i class="fas fa-truck"></i>
+            </div>
+            <div class=" feature-box-content">
+              <h5 class="mt-3 fw-bold">Fastest Delivery</h5>
+              <p>Do You Have Any Dinner Plan Reserve Your Table</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-box">
+            <div class="icon-circle">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class=" feature-box-content">
+              <h5 class="mt-3 fw-bold">Best Quality</h5>
+              <p>Do You Have Any Dinner Plan Reserve Your Table</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- dishes of the day -->
+    <section id="explore-foods" class="dishes">
+      <div class="container text-center ">
+        <h2 class="text-start food_heading">Our <span style="color: rgb(255, 181, 10);">Dishes</span> Of The Day</h2>
+        <hr class="mb-5 line" />
+        <div class="row">
+          <div class="col-md-6">
+            <div class="dish-card">
+              <img src="/asset/food Pics/food1.jpg" class="dish-image" alt="Meat Curry">
+              <div class="dish-card-content">
+                <h4>Meat Curry</h4>
+                <p>Amet minim mollit non our deserunt Lorem ipsum dolor sit amet consectetur..</p>
+                <h6><strong>₹65-₹45</strong></h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="dish-card">
+              <img src="/asset/food Pics/food2.jpg" class="dish-image" alt="ChickenShawarma">
+              <div class="dish-card-content">
+                <h4>Chicken Shawarma</h4>
+                <p>Amet minim mollit non our deserunt Lorem ipsum dolor sit amet consectetur.</p>
+                <h6><strong>₹65-₹45</strong></h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="dish-card">
+              <img src="/asset/food Pics/food3.avif" class="dish-image" alt="French Fries">
+              <div class="dish-card-content">
+                <h4>French Fries</h4>
+                <p>Amet minim mollit non our deserunt.
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+                <h6><strong>₹65-₹45</strong></h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="dish-card">
+              <img src="/asset/food Pics/food4.jpg" class="dish-image" alt="Noodle">
+              <div class="dish-card-content">
+                <h4>Noodle</h4>
+                <p>Amet minim mollit non our deserunt. Lorem ipsum dolor sit amet consectetur. </p>
+                <h6><strong>₹65-₹45</strong></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn-view-more">View More</button>
+      </div>
+    </section>
+    <!-- our bestseller menu -->
+    <div class="container mt-5">
+      <h2 class="text-start food_heading">Our <span style="color: rgb(255, 181, 10);">Bestseller</span> menu</h2>
+        <hr class="mb-5 line" />
+      <div class="row">
+          <!-- Card 1 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/k3ecw3ye82yrb7aotuwf" class="card-img-top" alt="Dish 1">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title d-inline">Griddle's - Burgers</h5>
+                      <span class="non-veg-tag"></span>
+                    </div>
+                    <hr>
+                      <p class="price">₹12.99 <span class="discount">₹15.99</span></p>
+                      <button class="order-btn">Order Now</button>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Card 2 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="https://img.freepik.com/free-photo/delicious-pizza-traditional-italian-pizza_1328-3991.jpg?ga=GA1.1.1951060787.1716537852&semt=ais_hybrid" class="card-img-top" alt="Dish 2">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title d-inline">La Pino'z Pizza - Onion Pizza</h5>
+                      <span class="veg-tag"> </span>
+                    </div>
+                    <hr>
+                      <p class="price">₹14.99 <span class="discount">₹19.99</span></p>
+                      <button class="order-btn">Order Now</button>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Card 3 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="https://img.freepik.com/premium-photo/asian-marinated-chicken-spicy-sauce-with-daikon_219193-2376.jpg?ga=GA1.1.1951060787.1716537852&semt=ais_hybrid" class="card-img-top" alt="Dish 3">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title d-inline">Zafrani's - Chilli Chicken</h5>
+                      <span class="non-veg-tag"></span>
+                    </div>
+                    <hr>
+                      <p class="price">₹9.99 <span class="discount">₹12.99</span></p>
+                      <button class="order-btn">Order Now</button>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Card 4 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="https://img.freepik.com/premium-photo/thin-pancakes-crepes-stuffed-chicken-meat-vegetables_88242-2822.jpg?ga=GA1.1.1951060787.1716537852&semt=ais_hybrid" class="card-img-top" alt="Dish 4">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title d-inline">The Roll's - Egg Roll</h5>
+                      <span class="non-veg-tag"></span>
+                    </div>
+                    <hr>
+                      <p class="price">₹18.99 <span class="discount">₹22.99</span></p>
+                      <button class="order-btn">Order Now</button>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Card 5 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="https://media.istockphoto.com/id/1144823591/photo/spaghetti-in-a-dish-on-a-white-background.jpg?b=1&s=612x612&w=0&k=20&c=yWXnUB0TbGVWD5NE-dbu33KzQ_ujPXWQtU7809AUwxE=" class="card-img-top" alt="Dish 5">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title d-inline">China Town's - Hakka Noddles</h5>
+                      <span class="veg-tag"></span>
+                    </div>
+                    <hr>
+                      <p class="price">₹10.99 <span class="discount">₹14.99</span></p>
+                      <button class="order-btn">Order Now</button>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Card 6 -->
+          <div class="col-md-4 mb-4">
+              <div class="card">
+                  <img src="https://img.freepik.com/premium-photo/traditional-tibetan-delicacy-momos-white-background-momos-image_1020697-136851.jpg?ga=GA1.1.1951060787.1716537852&semt=ais_hybrid" class="card-img-top" alt="Dish 6">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title d-inline">Darjelling Momo's - Chicken Momo</h5>
+                      <span class="non-veg-tag"></span>
+                    </div>
+                    <hr>
+                      <p class="price">₹16.99 <span class="discount">₹20.99</span></p>
+                      <button class="order-btn">Order Now</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <!-- about us -->
+    <section id="about">
+      <div class="container py-3">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img src="/about3.avif" alt="About Us Image" class="img-fluid rounded">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="food_heading fw-medium">Know More <span style="color: rgb(255, 181, 10);">About Foodie</span>
+            </h2>
+            <hr class="line">
+            <p class="lead">We bring authentic recipes and delicious flavors to your table. Our menu is crafted with
+              fresh ingredients and traditional cooking techniques to ensure the best taste experience. We take pride in
+              offering a diverse selection of dishes, from classic favorites to innovative creations. Whether you're
+              craving a hearty meal or a light bite, our expertly prepared dishes cater to every palate. Our commitment
+              to quality and exceptional service makes every dining experience special.
+
+              With a passion for culinary excellence, we source the finest ingredients to create mouthwatering dishes.
+              From cozy family gatherings to special celebrations, we aim to make every meal memorable and satisfying.
+            </p>
+            <p>From breakfast delights to exquisite kebab plates, we offer a diverse range of dishes that satisfy every
+              palate. Join us to experience the rich taste of real recipes.</p>
+            <button type="button" class="btn btn-outline-dark">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="chefs">
+      <!-- Chefs Section -->
+      <div class="container my-5">
+        <h2 class="text-start">Meet Our <span style="color: rgb(255, 181, 10);">Chefs</span></h2>
+        <hr class="mb-5 line">
+        <div class="row">
+          <!-- Chef 1 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card chef-card">
+              <img
+                src="https://img.freepik.com/free-photo/cheerful-young-cook-uniform-holding-salad-pointing-you_171337-5344.jpg?t=st=1738621454~exp=1738625054~hmac=5d5eebc0828e310b33d9489cde5ade2d2ddf87cc3ee028e5cc3335fd4a2c6f96&w=996"
+                alt="Chef Image" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Chef John Doe</h5>
+                <p class="card-text">Head Chef</p>
+                <p>Email: <a href="mailto:chef.john@example.com">chef.john@example.com</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chef 2 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card chef-card">
+              <img
+                src="https://img.freepik.com/premium-photo/happy-chef-man-cook-hat-smiling-showing-delicious-sign-while-posing-with-vegetable-salad-work-isolated-white-wall_171337-99920.jpg?w=996"
+                alt="Chef Image" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Chef Jane Smith</h5>
+                <p class="card-text">Sous Chef</p>
+                <p>Email: <a href="mailto:chef.jane@example.com">chef.jane@example.com</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chef 3 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card chef-card">
+              <img
+                src="     https://img.freepik.com/premium-photo/pleased-cook-man-uniform-smiling-cutting-vegetable-salad-wooden-board-isolated-white-wall_171337-99598.jpg?w=360"
+                alt="Chef Image" class="card-img-top" alt="Chef Image" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Chef Michael Scott</h5>
+                <p class="card-text">Pastry Chef</p>
+                <p>Email: <a href="mailto:chef.michael@example.com">chef.michael@example.com</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chef 4 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card chef-card">
+              <img
+                src="https://img.freepik.com/free-photo/pleased-young-male-cook-chef-uniform-holding-plate-vegetables-showing-thumb-up-isolated-pink-space_141793-44743.jpg?t=st=1738621683~exp=1738625283~hmac=3140ca418d6ee55a511e7b07747bd48bacc6a81e0b84354b32cb49476043bbe3&w=900"
+                alt="Chef Image" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Chef Emma Brown</h5>
+                <p class="card-text">Line Cook</p>
+                <p>Email: <a href="mailto:chef.emma@example.com">chef.emma@example.com</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chef 5 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card chef-card">
+              <img
+                src="https://img.freepik.com/free-photo/pleased-young-male-cook-wearing-chef-uniform-glasses-holding-vegetables-plate-holding-out-cucumber-isolated-green-wall_141793-78362.jpg?t=st=1738621505~exp=1738625105~hmac=736e55ec74b021600920fdf7be530a54a233506366ea3d9d3e6f03369495a7e2&w=900"
+                alt="Chef Image" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Chef Liam Green</h5>
+                <p class="card-text">Grill Master</p>
+                <p>Email: <a href="mailto:chef.liam@example.com">chef.liam@example.com</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chef 6 -->
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card chef-card">
+              <img
+                src="https://img.freepik.com/free-photo/professional-male-chef-cook-white-uniform-cook-hat-holding-bowl-tasting-soup-with-spoon-smiling-standing-pink-background_141793-20778.jpg?t=st=1738621779~exp=1738625379~hmac=c47e014d051010120b30d2f5097477d45b0922c56412fa110e5f6aa4b5e3e738&w=900"
+                alt="Chef Image" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Chef Olivia White</h5>
+                <p class="card-text">Sous Chef</p>
+                <p>Email: <a href="mailto:chef.olivia@example.com">chef.olivia@example.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact us -->
+    <section id="contact">
+      <div class="container my-5">
+        <div class="row">
+          <!-- Heading Section -->
+          <h2 class="text-start pe-3 col-12">Contact <span style="color: rgb(255, 181, 10);">Us</span></h2>
+          <hr class="mb-5 line col-12">
+          
+          <!-- Contact Form -->
+          <div class="col-lg-6 col-md-12">
+            <div class="contact-form mt-4">
+              <form>
+                <div class="mb-4">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="mb-4">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-4">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control mb-4" id="message" rows="4" placeholder="Your message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning">Submit</button>
+              </form>
+            </div>
+          </div>
+    
+          <!-- Google Map Section -->
+          <div class="col-lg-6 col-md-12">
+            <div class="map-container shadow-sm rounded">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.214065782925!2d88.48407207476137!3d22.720283527542332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8a20f80c9c0dd%3A0xd2ba85c3ea7034a2!2sBarasat!5e0!3m2!1sen!2sin!4v1738619970032!5m2!1sen!2sin"
+                width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Rewiew -->
+    <section id="testimonial">
+      <div class="container review-container">
+        <h2 class="text-start fw-medium my-4">Customer <span style="color: rgb(255, 181, 10);">Reviews</span></h2>
+        <hr class="line">
+        <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Review 1 -->
+            <div class="carousel-item active">
+              <div class="review-slide">
+                <img src="https://img.freepik.com/premium-photo/handsome-man-applauding_1368-37315.jpg?w=996"
+                  alt="Reviewer 1">
+                <p class="review-text">The food was absolutely amazing! I loved the flavors, and the presentation was
+                  beautiful.</p>
+                <p class="review-author">Emma J.</p>
+              </div>
+            </div>
+            <!-- Review 2 -->
+            <div class="carousel-item">
+              <div class="review-slide">
+                <img
+                  src="https://img.freepik.com/free-photo/portrait-friendly-looking-happy-attractive-male-model-with-moustache-beard-wearing-trendy-transparent-glasses-smiling-broadly-while-listening-interesting-story-waiting-mom-give-meal_176420-22400.jpg?t=st=1738613635~exp=1738617235~hmac=4e427a6704fcf9f47de72d1de2864c426e1b8526253a94e029fdf8a1d3a30b3b&w=996"
+                  alt="Reviewer 2">
+                <p class="review-text">A fantastic dining experience! The service was top-notch, and the dishes were
+                  perfectly cooked.</p>
+                <p class="review-author">John D.</p>
+              </div>
+            </div>
+            <!-- Review 3 -->
+            <div class="carousel-item">
+              <div class="review-slide">
+                <img
+                  src="https://img.freepik.com/free-photo/lifestyle-beauty-fashion-people-emotions-concept-young-asian-female-office-manager-ceo-with-pleased-expression-standing-white-background-smiling-with-arms-crossed-chest_1258-59329.jpg?t=st=1738613614~exp=1738617214~hmac=6a6b0c3384da17fdfc129193c0e7ff681c04a328c433960a44d721a8bbf96808&w=996"
+                  alt="Reviewer 3">
+                <p class="review-text">One of the best meals I've had! Can't wait to come back and try more dishes.
+                </p>
+                <p class="review-author">Sarah L.</p>
+              </div>
+            </div>
+            <!-- Review 4 -->
+            <div class="carousel-item">
+              <div class="review-slide">
+                <img
+                  src="https://img.freepik.com/premium-photo/portrait-successful-cheerful-young-man-holding-presenting-something-hand-with-happy-smiling-face_136354-13528.jpg?w=996"
+                  alt="Reviewer 4">
+                <p class="review-text">Highly recommend this place! The flavors were so rich, and the ambiance was just
+                  right.</p>
+                <p class="review-author">Michael R.</p>
+
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer mt-auto rounded m-2">
+    <div class="container">
+      <div class="row">
+        <!-- About Us Section -->
+        <div class="col-md-4 mb-4">
+          <h5>About Us</h5>
+          <p>At Foodie App, we bring the best dining experiences right to your fingertips. Explore amazing restaurants,
+            discover new cuisines, and read customer reviews to find the best meals!</p>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="col-md-4 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#explore-foods">Menu</a></li>
+            <li><a href="#testimonial">Reviews</a></li>
+            <li><a href="#chefs">chefs</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="col-md-4 mb-4">
+          <h5>Contact Us</h5>
+          <p><strong>Email:</strong> contact@foodieapp.com</p>
+          <p><strong>Phone:</strong> +1 234 567 890</p>
+          <p><strong>Address:</strong> 123 Foodie Street, Food City, FC 10001</p>
+
+          <h5 class="mt-3">Follow Us</h5>
+          <div class="social-icons">
+            <a href="#" class="fab fa-facebook-square"></a>
+            <a href="#" class="fab fa-twitter-square"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-youtube"></a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <!-- Footer Bottom Section -->
+      <div class="text-center">
+        <p>&copy; 2025 Foodie App. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
